@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>متجر الملابس</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- الشريط العلوي -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="logo">TREND</a>
+      <div class="menu">
+        <a href="#" id="favorite-count" onclick="navigateTo('favorites')">Favorites: 0</a>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- الصفحة الرئيسية -->
+  <div class="home">
+    <header class="hero">
+      <h1>Jackets List</h1>
+    </header>
+    <section id="products" class="products">
+        <div class="product" data-id="product1">
+          <img src="img/photo_2024-12-03_14-46-24.jpg" alt="منتج 1">
+          <h3>Jacket</h3>
+          <p>Light blue jacket with fur collar</p>
+          <div class="price">45$</div>
+          <button onclick="addToFavorite('product1')">Add to favorite</button>
+        </div>
+      
+        <div class="product" data-id="product2">
+          <img src="img/photo_2024-12-03_14-46-26.jpg" alt="منتج 2">
+          <h3>Jacket</h3>
+          <p>Pink jacket with fur collar and sleeves</p>
+          <div class="price">47$</div>
+          <button onclick="addToFavorite('product2')">Add to favorite</button>
+        </div>
+      
+        <div class="product" data-id="product3">
+          <img src="img/photo_2024-12-03_14-46-29.jpg" alt="منتج 3">
+          <h3>Jacket</h3>
+          <p>White jacket with fur collar and sleeves</p>
+          <div class="price">45$</div>
+          <button onclick="addToFavorite('product3')">Add to favorite</button>
+        </div>
+      
+        <div class="product" data-id="product4">
+          <img src="img/photo_2024-12-03_14-46-31.jpg" alt="منتج 4">
+          <h3>Jacket</h3>
+          <p>Pink jacket with fur collar and sleeves</p>
+          <div class="price">55$</div>
+          <button onclick="addToFavorite('product4')">Add to favorite</button>
+        </div>
+      
+        <div class="product" data-id="product5">
+          <img src="img/photo_2024-12-03_14-46-33.jpg" alt="منتج 5">
+          <h3>Jacket</h3>
+          <p>Red jacket with fur collar and sleeves</p>
+          <div class="price">56$</div>
+          <button onclick="addToFavorite('product5')">Add to favorite</button>
+        </div>
+      
+        <div class="product" data-id="product6">
+          <img src="img/photo_2024-12-03_14-46-40.jpg" alt="منتج 6">
+          <h3>Jacket</h3>
+          <p>Black jacket with fur collar and sleeves</p>
+          <div class="price">65$</div>
+          <button onclick="addToFavorite('product6')">Add to favorite</button>
+        </div>
+      
+        <div class="product" data-id="product7">
+          <img src="img/photo_2024-12-03_14-46-43.jpg" alt="منتج 7">
+          <h3>Jacket</h3>
+          <p>White jacket</p>
+          <div class="price">65$</div>
+          <button onclick="addToFavorite('product7')">Add to favorite</button>
+        </div>
+      
+        <div class="product" data-id="product8">
+          <img src="img/photo_2024-12-03_14-46-45.jpg" alt="منتج 8">
+          <h3>Jacket</h3>
+          <p>Pink short jacket</p>
+          <div class="price">35$</div>
+          <button onclick="addToFavorite('product8')">Add to favorite</button>
+        </div>
+      </section>
+      
+  </div>
+
+  <!-- صفحة المفضلات -->
+  <div class="favorites-page" style="display: none;">
+    <header class="favorites-header">
+      
+      <button class="back" onclick="navigateTo('home')">Back to Home</button>
+      <h2>Your Favorite Products</h2>
+    </header>
+    <div id="favorites-list" class="products"></div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
